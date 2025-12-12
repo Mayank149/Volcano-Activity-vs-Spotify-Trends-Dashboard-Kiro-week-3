@@ -1,0 +1,39 @@
+{
+  "name": "volcano-spotify-dashboard",
+  "version": "1.0.0",
+  "description": "Interactive data visualization comparing volcanic activity with Spotify music trends",
+  "type": "data-visualization",
+  "framework": "vanilla-js",
+  "created": "2025-12-12",
+  "author": "Mayank Bansal",
+  "kiro": {
+    "ide_version": "latest",
+    "project_type": "data-science",
+    "features": [
+      "data-processing",
+      "interactive-dashboard",
+      "chart-js-visualization",
+      "csv-data-analysis"
+    ]
+  },
+  "datasets": {
+    "volcano_eruptions": {
+      "source": "Global Volcanism Program",
+      "timeframe": "2017-2021",
+      "records": 110
+    },
+    "spotify_top200": {
+      "source": "Spotify Charts API",
+      "timeframe": "2017-2021", 
+      "records": 74660
+    }
+  },
+  "technologies": [
+    "Python",
+    "Pandas",
+    "Chart.js",
+    "HTML5",
+    "CSS3",
+    "JavaScript"
+  ]
+}
