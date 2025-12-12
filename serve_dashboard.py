@@ -10,11 +10,11 @@ import webbrowser
 import os
 import sys
 
-PORT = 8001
+PORT = 8002
 
 class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, directory="dashboard", **kwargs)
+        super().__init__(*args, directory=".", **kwargs)
 
 def main():
     # Check if dashboard directory exists
@@ -24,7 +24,7 @@ def main():
         sys.exit(1)
     
     # Check if required files exist
-    required_files = ["dashboard/index.html", "dashboard/styles.css", "dashboard/dashboard.js"]
+    required_files = ["index.html", "styles.css", "dashboard.js"]
     missing_files = [f for f in required_files if not os.path.exists(f)]
     
     if missing_files:

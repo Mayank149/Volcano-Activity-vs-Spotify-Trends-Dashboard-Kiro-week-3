@@ -1,0 +1,31 @@
+# GitHub Pages Configuration for Volcano vs Spotify Dashboard
+
+title: "Volcano Activity vs Spotify Trends Dashboard"
+description: "Interactive data visualization exploring the relationship between global volcanic eruptions and music streaming patterns (2017-2021)"
+
+# Theme
+theme: minima
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files from processing
+exclude:
+  - data_processor.py
+  - serve_dashboard.py
+  - dashboard/
+  - cleaned_*.csv
+  - eruptions.csv
+  - spotify-top-200-dataset.csv
+  - data_explanation.md
+  - .vscode/
+  - README.md
+
+# Include specific files
+include:
+  - index.html
+  - styles.css
+  - dashboard.js
+  - merged_dataset.csv

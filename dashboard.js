@@ -11,18 +11,14 @@ async function loadData() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const csvText = await response.text();
-        console.log('Raw CSV first 500 chars:', csvText.substring(0, 500));
-        
         mergedData = parseCSV(csvText);
-        console.log('Parsed data first 3 records:', mergedData.slice(0, 3));
-        console.log('Sample genre values:', mergedData.slice(0, 10).map(d => d.top_genre));
         
         updateStatistics();
         createCharts();
         generateInsights();
     } catch (error) {
         console.error('Error loading data:', error);
-        console.log('Using sample data instead');
+
         
         // Fallback to sample data for demo
         generateSampleData();
@@ -37,9 +33,7 @@ function parseCSV(csvText) {
     const lines = csvText.trim().split('\n');
     const headers = lines[0].split(',').map(h => h.trim());
     
-    console.log('Headers found:', headers);
-    
-    return lines.slice(1).map((line, lineIndex) => {
+    return lines.slice(1).map(line => {
         const values = line.split(',').map(v => v.trim());
         const obj = {};
         
@@ -51,10 +45,6 @@ function parseCSV(csvText) {
                 obj[header] = parseFloat(value) || 0;
             }
         });
-        
-        if (lineIndex < 3) {
-            console.log(`Parsed line ${lineIndex}:`, obj);
-        }
         
         return obj;
     });
@@ -283,19 +273,11 @@ function createGenreChart() {
     
     // Count genre occurrences
     const genreCounts = {};
-    console.log('Genre chart - total records:', mergedData.length);
-    console.log('First 5 genre values:', mergedData.slice(0, 5).map(d => `"${d.top_genre}" (${typeof d.top_genre})`));
-    
-    mergedData.forEach((d, index) => {
-        if (index < 5) {
-            console.log(`Record ${index}: genre="${d.top_genre}", type=${typeof d.top_genre}, valid=${d.top_genre && d.top_genre !== 'Unknown' && d.top_genre !== 'unknown' && d.top_genre.trim() !== ''}`);
-        }
+    mergedData.forEach(d => {
         if (d.top_genre && d.top_genre !== 'Unknown' && d.top_genre !== 'unknown' && d.top_genre.trim() !== '') {
             genreCounts[d.top_genre] = (genreCounts[d.top_genre] || 0) + 1;
         }
     });
-    
-    console.log('Final genre counts:', genreCounts);
     
     // Get top 8 genres
     const sortedGenres = Object.entries(genreCounts)

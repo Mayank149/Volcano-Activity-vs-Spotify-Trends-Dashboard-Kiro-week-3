@@ -1,6 +1,6 @@
 # 🌋🎵 Volcano Activity vs Spotify Trends Dashboard
 
-An interactive data visualization project that explores the relationship between global volcanic eruptions and music streaming patterns from 2017-2021.
+An interactive data visualization project that explores the relationship between global volcanic eruptions and music streaming patterns from 2017-2021. This unique data mashup demonstrates how seemingly unrelated global phenomena can be analyzed together to reveal interesting temporal patterns and insights.
 
 ## 🎯 Project Overview
 
@@ -10,23 +10,31 @@ This project combines two seemingly unrelated datasets:
 
 The goal is to create an engaging dashboard that visualizes both datasets and explores any potential correlations between volcanic activity and music consumption patterns.
 
+## ✨ Features
+
+- 📊 **Interactive Time Series Analysis** - Dual-axis visualization of volcanic eruptions and streaming data
+- 🌋 **Volcanic Explosivity Index (VEI) Tracking** - Annual distribution and intensity analysis
+- 🎵 **Music Genre Trends** - Comprehensive genre analysis showing Dance Pop dominance (92.8%)
+- 📈 **Correlation Analysis** - Statistical examination of relationships between datasets
+- 📱 **Responsive Design** - Modern glassmorphism UI that works on all devices
+- ⚡ **Real-time Processing** - Dynamic data loading and interactive visualizations
+- 🔧 **Extensible Architecture** - Easy to modify and add new datasets
+
 ## 📁 Project Structure
 
 ```
-├── eruptions.csv                 # Raw volcano eruption data
-├── spotify-top-200-dataset.csv   # Raw Spotify streaming data
-├── data_processor.py             # Data cleaning and processing script
+├── index.html                    # Main dashboard interface
+├── styles.css                    # Modern responsive styling
+├── dashboard.js                  # Interactive Chart.js visualizations
+├── merged_dataset.csv            # Processed weekly time-series data
+├── data_processor.py             # Data cleaning and processing pipeline
+├── serve_dashboard.py            # Local development server
+├── README.md                     # Project documentation
+├── data_explanation.md           # Technical data processing details
+├── eruptions.csv                 # Raw volcano eruption dataset (2017-2021)
+├── spotify-top-200-dataset.csv   # Raw Spotify Top 200 dataset (2017-2021)
 ├── cleaned_volcano_data.csv      # Processed volcano data
-├── cleaned_spotify_data.csv      # Processed Spotify data
-├── merged_dataset.csv            # Combined weekly dataset
-├── data_explanation.md           # Detailed data processing explanation
-├── serve_dashboard.py            # Local web server for dashboard
-├── README.md                     # This file
-└── dashboard/
-    ├── index.html               # Main dashboard page
-    ├── styles.css               # Dashboard styling
-    ├── dashboard.js             # Interactive visualizations
-    └── merged_dataset.csv       # Data for web interface
+└── cleaned_spotify_data.csv      # Processed Spotify data
 ```
 
 ## 🚀 Quick Start
@@ -49,9 +57,9 @@ python serve_dashboard.py
 ```
 
 This will:
-- Start a local web server on port 8000
+- Start a local web server on port 8002
 - Automatically open the dashboard in your browser
-- Serve the interactive visualization at `http://localhost:8000`
+- Serve the interactive visualization at `http://localhost:8002`
 
 ## 📊 Dashboard Features
 
@@ -135,9 +143,9 @@ Edit `data_processor.py` to:
 
 ### Customize Dashboard
 Edit dashboard files to:
-- `dashboard/styles.css`: Change colors, layout, animations
-- `dashboard/dashboard.js`: Add new chart types, modify interactions
-- `dashboard/index.html`: Update content, add new sections
+- `styles.css`: Change colors, layout, animations
+- `dashboard.js`: Add new chart types, modify interactions
+- `index.html`: Update content, add new sections
 
 ### Server Configuration
 Edit `serve_dashboard.py` to:
@@ -172,6 +180,10 @@ Feel free to:
 ## 📄 License
 
 This project is for educational and research purposes. Please respect the original data sources' terms of use.
+
+## 👨‍💻 Author
+
+**Mayank Bansal** - Built with [Kiro IDE](https://kiro.ai)
 
 ---
 
