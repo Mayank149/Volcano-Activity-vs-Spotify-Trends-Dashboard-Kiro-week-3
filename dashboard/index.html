@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volcano Activity vs Spotify Trends Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌋 Volcano Activity vs 🎵 Spotify Trends Dashboard</h1>
+            <p>Exploring the relationship between global volcanic eruptions and music streaming patterns (2017-2021)</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Eruptions</h3>
+                <div class="stat-value" id="totalEruptions">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Streams</h3>
+                <div class="stat-value" id="totalStreams">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Active Weeks</h3>
+                <div class="stat-value" id="activeWeeks">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Max VEI</h3>
+                <div class="stat-value" id="maxVEI">-</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>Time Series Comparison</h2>
+            <div class="chart-wrapper">
+                <canvas id="timeSeriesChart"></canvas>
+            </div>
+        </div>
+
+        <div class="charts-row">
+            <div class="chart-container half">
+                <h2>VEI Distribution Over Time</h2>
+                <div class="chart-wrapper">
+                    <canvas id="veiChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container half">
+                <h2>Top Music Genres</h2>
+                <div class="chart-wrapper">
+                    <canvas id="genreChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>Correlation Analysis</h2>
+            <div class="chart-wrapper">
+                <canvas id="correlationChart"></canvas>
+            </div>
+        </div>
+
+        <div class="insights">
+            <h2>Key Insights</h2>
+            <div class="insight-grid">
+                <div class="insight-card">
+                    <h3>🌋 Volcanic Activity</h3>
+                    <p id="volcanoInsight">Loading...</p>
+                </div>
+                <div class="insight-card">
+                    <h3>🎵 Music Trends</h3>
+                    <p id="musicInsight">Loading...</p>
+                </div>
+                <div class="insight-card">
+                    <h3>📊 Correlation</h3>
+                    <p id="correlationInsight">Loading...</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Data Sources: Global Volcanism Program, Spotify Top 200 Dataset | Analysis Period: 2017-2021</p>
+        </footer>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

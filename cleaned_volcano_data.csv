@@ -1,0 +1,111 @@
+volcano_number,volcano_name,eruption_number,eruption_category,area_of_activity,vei,start_year,start_month,start_day,evidence_method_dating,end_year,end_month,end_day,latitude,longitude,date_string,eruption_date,week
+266030,Soputan,22354,Confirmed Eruption,,0.0,2020,3,23,Historical Observations,2020.0,4.0,2.0,1.112,124.737,2020-03-23,2020-03-23,2020-03-23/2020-03-29
+343100,San Miguel,22355,Confirmed Eruption,,0.0,2020,2,22,Historical Observations,2020.0,2.0,22.0,13.434,-88.269,2020-02-22,2020-02-22,2020-02-17/2020-02-23
+233020,"Fournaise, Piton de la",22343,Confirmed Eruption,,0.0,2020,2,10,Historical Observations,2020.0,4.0,6.0,-21.244,55.708,2020-02-10,2020-02-10,2020-02-10/2020-02-16
+345020,Rincon de la Vieja,22346,Confirmed Eruption,,0.0,2020,1,31,Historical Observations,2020.0,4.0,17.0,10.83,-85.324,2020-01-31,2020-01-31,2020-01-27/2020-02-02
+353010,Fernandina,22347,Confirmed Eruption,,0.0,2020,1,12,Historical Observations,2020.0,1.0,12.0,-0.37,-91.55,2020-01-12,2020-01-12,2020-01-06/2020-01-12
+273070,Taal,22344,Confirmed Eruption,,0.0,2020,1,12,Historical Observations,2020.0,1.0,22.0,14.002,120.993,2020-01-12,2020-01-12,2020-01-06/2020-01-12
+282050,Kuchinoerabujima,22345,Confirmed Eruption,,0.0,2020,1,11,Historical Observations,2020.0,4.0,17.0,30.443,130.217,2020-01-11,2020-01-11,2020-01-06/2020-01-12
+241040,Whakaari/White Island,22338,Confirmed Eruption,1978/90 Crater Complex,2.0,2019,12,9,Historical Observations,2019.0,12.0,9.0,-37.52,177.18,2019-12-09,2019-12-09,2019-12-09/2019-12-15
+311060,Semisopochnoi,22341,Confirmed Eruption,,0.0,2019,12,7,Historical Observations,2020.0,3.0,15.0,51.93,179.58,2019-12-07,2019-12-07,2019-12-02/2019-12-08
+284096,Nishinoshima,22340,Confirmed Eruption,,1.0,2019,12,5,Historical Observations,2020.0,4.0,17.0,27.247,140.874,2019-12-05,2019-12-05,2019-12-02/2019-12-08
+311240,Cleveland,22342,Uncertain Eruption,,0.0,2019,11,7,Historical Observations,2019.0,12.0,7.0,52.825,-169.944,2019-11-07,2019-11-07,2019-11-04/2019-11-10
+282060,Kikai,22339,Confirmed Eruption,,0.0,2019,11,2,Historical Observations,2020.0,4.0,16.0,30.793,130.305,2019-11-02,2019-11-02,2019-10-28/2019-11-03
+300260,Klyuchevskoy,22335,Confirmed Eruption,,0.0,2019,10,24,Historical Observations,2020.0,4.0,17.0,56.056,160.642,2019-10-24,2019-10-24,2019-10-21/2019-10-27
+243070,Lateiki,22334,Confirmed Eruption,,1.0,2019,10,13,Historical Observations,2019.0,10.0,22.0,-19.18,-174.87,2019-10-13,2019-10-13,2019-10-07/2019-10-13
+283110,Asamayama,22326,Confirmed Eruption,,0.0,2019,8,7,Historical Observations,2019.0,8.0,25.0,36.406,138.523,2019-08-07,2019-08-07,2019-08-05/2019-08-11
+357090,Copahue,22336,Confirmed Eruption,,0.0,2019,8,2,Historical Observations,2019.0,11.0,12.0,-37.856,-71.183,2019-08-02,2019-08-02,2019-07-29/2019-08-04
+263090,Tangkuban Parahu,22325,Confirmed Eruption,,0.0,2019,7,26,Historical Observations,2019.0,9.0,17.0,-6.77,107.6,2019-07-26,2019-07-26,2019-07-22/2019-07-28
+311360,Shishaldin,22330,Confirmed Eruption,Summit crater,0.0,2019,7,23,Historical Observations,2020.0,4.0,9.0,54.756,-163.97,2019-07-23,2019-07-23,2019-07-22/2019-07-28
+351020,"Ruiz, Nevado del",22329,Confirmed Eruption,,0.0,2019,7,23,Historical Observations,2020.0,4.0,13.0,4.892,-75.324,2019-07-23,2019-07-23,2019-07-22/2019-07-28
+311060,Semisopochnoi,22328,Confirmed Eruption,,0.0,2019,7,16,Historical Observations,2019.0,8.0,24.0,51.93,179.58,2019-07-16,2019-07-16,2019-07-15/2019-07-21
+252120,Ulawun,22319,Confirmed Eruption,,0.0,2019,6,26,Historical Observations,2019.0,10.0,5.0,-5.05,151.33,2019-06-26,2019-06-26,2019-06-24/2019-06-30
+354020,Ubinas,22324,Confirmed Eruption,,0.0,2019,6,24,Historical Observations,2019.0,12.0,24.0,-16.355,-70.903,2019-06-24,2019-06-24,2019-06-24/2019-06-30
+290250,Raikoke,22321,Confirmed Eruption,,0.0,2019,6,22,Historical Observations,2019.0,7.0,1.0,48.292,153.25,2019-06-22,2019-06-22,2019-06-17/2019-06-23
+233020,"Fournaise, Piton de la",22318,Confirmed Eruption,,0.0,2019,6,11,Historical Observations,2019.0,10.0,27.0,-21.244,55.708,2019-06-11,2019-06-11,2019-06-10/2019-06-16
+311120,Great Sitkin,22322,Confirmed Eruption,,0.0,2019,6,1,Historical Observations,2019.0,6.0,7.0,52.076,-176.13,2019-06-01,2019-06-01,2019-05-27/2019-06-02
+290240,Sarychev Peak,22320,Confirmed Eruption,,2.0,2019,5,16,Historical Observations,2019.0,10.0,7.0,48.092,153.2,2019-05-16,2019-05-16,2019-05-13/2019-05-19
+341040,Colima,22323,Confirmed Eruption,,0.0,2019,5,11,Historical Observations,2019.0,7.0,12.0,19.514,-103.62,2019-05-11,2019-05-11,2019-05-06/2019-05-12
+282110,Asosan,22317,Confirmed Eruption,,0.0,2019,4,16,Historical Observations,2020.0,4.0,17.0,32.884,131.104,2019-04-16,2019-04-16,2019-04-15/2019-04-21
+300260,Klyuchevskoy,22310,Confirmed Eruption,,0.0,2019,4,9,Historical Observations,2019.0,7.0,2.0,56.056,160.642,2019-04-09,2019-04-09,2019-04-08/2019-04-14
+352090,Sangay,22312,Confirmed Eruption,,0.0,2019,3,26,Historical Observations,2020.0,4.0,17.0,-2.005,-78.341,2019-03-26,2019-03-26,2019-03-25/2019-03-31
+344020,San Cristobal,22311,Confirmed Eruption,,0.0,2019,3,4,Historical Observations,2019.0,3.0,4.0,12.702,-87.004,2019-03-04,2019-03-04,2019-03-04/2019-03-10
+233020,"Fournaise, Piton de la",22307,Confirmed Eruption,,0.0,2019,2,18,Historical Observations,2019.0,3.0,10.0,-21.244,55.708,2019-02-18,2019-02-18,2019-02-18/2019-02-24
+263310,Tengger Caldera,22306,Confirmed Eruption,Bromo,2.0,2019,2,18,Historical Observations,2019.0,7.0,28.0,-7.942,112.95,2019-02-18,2019-02-18,2019-02-18/2019-02-24
+300130,Karymsky,22309,Confirmed Eruption,,0.0,2019,2,16,Historical Observations,2019.0,9.0,24.0,54.049,159.443,2019-02-16,2019-02-16,2019-02-11/2019-02-17
+345040,Poas,22303,Confirmed Eruption,,0.0,2019,2,7,Historical Observations,2019.0,9.0,30.0,10.2,-84.233,2019-02-07,2019-02-07,2019-02-04/2019-02-10
+261080,Sinabung,22316,Confirmed Eruption,,0.0,2019,2,6,Historical Observations,2019.0,6.0,9.0,3.17,98.392,2019-02-06,2019-02-06,2019-02-04/2019-02-10
+256010,Tinakula,22313,Confirmed Eruption,,2.0,2018,12,8,Historical Observations,2020.0,4.0,11.0,-10.386,165.804,2018-12-08,2018-12-08,2018-12-03/2018-12-09
+267020,Karangetang,22294,Confirmed Eruption,,2.0,2018,11,25,Historical Observations,2020.0,4.0,17.0,2.781,125.407,2018-11-25,2018-11-25,2018-11-19/2018-11-25
+357040,Planchon-Peteroa,22297,Confirmed Eruption,,1.0,2018,11,7,Historical Observations,2019.0,5.0,7.0,-35.223,-70.568,2018-11-07,2018-11-07,2018-11-05/2018-11-11
+351020,"Ruiz, Nevado del",22298,Uncertain Eruption,,0.0,2018,10,26,Historical Observations,2018.0,10.0,26.0,4.892,-75.324,2018-10-26,2018-10-26,2018-10-22/2018-10-28
+282050,Kuchinoerabujima,22296,Confirmed Eruption,,3.0,2018,10,21,Historical Observations,2019.0,2.0,3.0,30.443,130.217,2018-10-21,2018-10-21,2018-10-15/2018-10-21
+268060,Gamalama,22295,Confirmed Eruption,,1.0,2018,10,4,Historical Observations,2018.0,10.0,6.0,0.8,127.33,2018-10-04,2018-10-04,2018-10-01/2018-10-07
+266030,Soputan,22293,Confirmed Eruption,,3.0,2018,10,2,Historical Observations,2018.0,12.0,16.0,1.112,124.737,2018-10-02,2018-10-02,2018-10-01/2018-10-07
+260010,Barren Island,22292,Confirmed Eruption,,1.0,2018,9,25,Historical Observations,2020.0,4.0,16.0,12.278,93.858,2018-09-25,2018-09-25,2018-09-24/2018-09-30
+252120,Ulawun,22286,Confirmed Eruption,,2.0,2018,9,21,Historical Observations,2018.0,10.0,12.0,-5.05,151.33,2018-09-21,2018-09-21,2018-09-17/2018-09-23
+290200,Ketoi,22287,Uncertain Eruption,,1.0,2018,9,21,Historical Observations,2018.0,9.0,21.0,47.35,152.475,2018-09-21,2018-09-21,2018-09-17/2018-09-23
+290240,Sarychev Peak,22288,Confirmed Eruption,,2.0,2018,9,8,Historical Observations,2018.0,10.0,15.0,48.092,153.2,2018-09-08,2018-09-08,2018-09-03/2018-09-09
+311060,Semisopochnoi,22289,Confirmed Eruption,,1.0,2018,9,8,Historical Observations,2018.0,10.0,31.0,51.93,179.58,2018-09-08,2018-09-08,2018-09-03/2018-09-09
+312070,Veniaminof,22290,Confirmed Eruption,,1.0,2018,9,4,Historical Observations,2018.0,12.0,23.0,56.17,-159.38,2018-09-04,2018-09-04,2018-09-03/2018-09-09
+290390,Alaid,22281,Confirmed Eruption,,1.0,2018,8,20,Historical Observations,2018.0,8.0,21.0,50.861,155.565,2018-08-20,2018-08-20,2018-08-20/2018-08-26
+352090,Sangay,22283,Confirmed Eruption,,2.0,2018,8,8,Historical Observations,2018.0,12.0,7.0,-2.005,-78.341,2018-08-08,2018-08-08,2018-08-06/2018-08-12
+345020,Rincon de la Vieja,22282,Confirmed Eruption,,1.0,2018,7,28,Historical Observations,2019.0,6.0,11.0,10.83,-85.324,2018-07-28,2018-07-28,2018-07-23/2018-07-29
+284096,Nishinoshima,22280,Confirmed Eruption,,1.0,2018,7,12,Historical Observations,2018.0,7.0,21.0,27.247,140.874,2018-07-12,2018-07-12,2018-07-09/2018-07-15
+233005,Mayotte,22337,Confirmed Eruption,About 50 km E of the eastern tip of Mayotte Island,0.0,2018,7,3,Seismicity,2019.0,8.0,20.0,-12.83,45.17,2018-07-03,2018-07-03,2018-07-02/2018-07-08
+353050,"Negra, Sierra",22279,Confirmed Eruption,Summit crater and NNW flank,2.0,2018,6,26,Historical Observations,2018.0,8.0,23.0,-0.83,-91.17,2018-06-26,2018-06-26,2018-06-25/2018-07-01
+344040,Telica,22277,Confirmed Eruption,,1.0,2018,6,21,Historical Observations,2018.0,8.0,15.0,12.606,-86.84,2018-06-21,2018-06-21,2018-06-18/2018-06-24
+262000,Krakatau,22275,Confirmed Eruption,,3.0,2018,6,18,Historical Observations,2020.0,4.0,17.0,-6.102,105.423,2018-06-18,2018-06-18,2018-06-18/2018-06-24
+353010,Fernandina,22278,Confirmed Eruption,,1.0,2018,6,16,Historical Observations,2018.0,6.0,21.0,-0.37,-91.55,2018-06-16,2018-06-16,2018-06-11/2018-06-17
+311120,Great Sitkin,22276,Confirmed Eruption,,1.0,2018,6,10,Historical Observations,2018.0,8.0,11.0,52.076,-176.13,2018-06-10,2018-06-10,2018-06-04/2018-06-10
+252120,Ulawun,22285,Confirmed Eruption,,1.0,2018,6,8,Historical Observations,2018.0,6.0,8.0,-5.05,151.33,2018-06-08,2018-06-08,2018-06-04/2018-06-10
+263250,Merapi,22264,Confirmed Eruption,,3.0,2018,5,11,Historical Observations,2020.0,4.0,17.0,-7.54,110.446,2018-05-11,2018-05-11,2018-05-07/2018-05-13
+300130,Karymsky,22265,Confirmed Eruption,,3.0,2018,4,28,Historical Observations,2018.0,9.0,30.0,54.049,159.443,2018-04-28,2018-04-28,2018-04-23/2018-04-29
+261140,Marapi,22262,Confirmed Eruption,Verbeek Crater,2.0,2018,4,27,Historical Observations,2018.0,5.0,2.0,-0.38,100.474,2018-04-27,2018-04-27,2018-04-23/2018-04-29
+344020,San Cristobal,22266,Confirmed Eruption,,1.0,2018,4,22,Historical Observations,2018.0,4.0,22.0,12.702,-87.004,2018-04-22,2018-04-22,2018-04-16/2018-04-22
+261170,Kerinci,22274,Confirmed Eruption,,1.0,2018,4,21,Historical Observations,2020.0,4.0,17.0,-1.697,101.264,2018-04-21,2018-04-21,2018-04-16/2018-04-22
+223020,Nyamuragira,22315,Confirmed Eruption,Summit caldera,0.0,2018,4,18,Historical Observations,2020.0,4.0,7.0,-1.408,29.2,2018-04-18,2018-04-18,2018-04-16/2018-04-22
+233020,"Fournaise, Piton de la",22261,Confirmed Eruption,,0.0,2018,4,3,Historical Observations,2018.0,11.0,1.0,-21.244,55.708,2018-04-03,2018-04-03,2018-04-02/2018-04-08
+263200,Dieng Volcanic Complex,22263,Confirmed Eruption,Sileri Crater,1.0,2018,4,1,Historical Observations,2018.0,4.0,1.0,-7.2,109.879,2018-04-01,2018-04-01,2018-03-26/2018-04-01
+282090,Kirishimayama,22257,Confirmed Eruption,Shinmoedake,3.0,2018,3,1,Historical Observations,2018.0,6.0,27.0,31.934,130.862,2018-03-01,2018-03-01,2018-02-26/2018-03-04
+352090,Sangay,22259,Confirmed Eruption,Summit crater,1.0,2018,2,25,Historical Observations,2018.0,2.0,25.0,-2.005,-78.341,2018-02-25,2018-02-25,2018-02-19/2018-02-25
+267020,Karangetang,22256,Confirmed Eruption,,1.0,2018,2,2,Historical Observations,2018.0,2.0,2.0,2.781,125.407,2018-02-02,2018-02-02,2018-01-29/2018-02-04
+283120,Kusatsu-Shiranesan,22258,Confirmed Eruption,Motoshiranesan,1.0,2018,1,23,Historical Observations,2018.0,1.0,23.0,36.618,138.528,2018-01-23,2018-01-23,2018-01-22/2018-01-28
+343100,San Miguel,22251,Confirmed Eruption,,1.0,2018,1,14,Historical Observations,2018.0,5.0,30.0,13.434,-88.269,2018-01-14,2018-01-14,2018-01-08/2018-01-14
+273030,Mayon,22250,Confirmed Eruption,,2.0,2018,1,13,Historical Observations,2019.0,10.0,12.0,13.257,123.685,2018-01-13,2018-01-13,2018-01-08/2018-01-14
+251002,Kadovar,22246,Confirmed Eruption,,2.0,2018,1,5,Historical Observations,2020.0,4.0,17.0,-3.608,144.588,2018-01-05,2018-01-05,2018-01-01/2018-01-07
+351020,"Ruiz, Nevado del",22348,Uncertain Eruption,,0.0,2017,12,18,Historical Observations,2017.0,12.0,18.0,4.892,-75.324,2017-12-18,2017-12-18,2017-12-18/2017-12-24
+272020,Kanlaon,22249,Confirmed Eruption,,2.0,2017,12,9,Historical Observations,2017.0,12.0,9.0,10.412,123.132,2017-12-09,2017-12-09,2017-12-04/2017-12-10
+264020,Agung,22241,Confirmed Eruption,Summit crater,3.0,2017,11,21,Historical Observations,2019.0,6.0,13.0,-8.343,115.508,2017-11-21,2017-11-21,2017-11-20/2017-11-26
+261230,Dempo,22248,Confirmed Eruption,,1.0,2017,11,9,Historical Observations,2017.0,11.0,9.0,-4.016,103.121,2017-11-09,2017-11-09,2017-11-06/2017-11-12
+256010,Tinakula,22239,Confirmed Eruption,,3.0,2017,10,21,Historical Observations,2017.0,10.0,26.0,-10.386,165.804,2017-10-21,2017-10-21,2017-10-16/2017-10-22
+290240,Sarychev Peak,22308,Confirmed Eruption,,2.0,2017,10,12,Historical Observations,2017.0,11.0,13.0,48.092,153.2,2017-10-12,2017-10-12,2017-10-09/2017-10-15
+282090,Kirishimayama,22242,Confirmed Eruption,Shinmoedake,2.0,2017,10,11,Historical Observations,2017.0,10.0,17.0,31.934,130.862,2017-10-11,2017-10-11,2017-10-09/2017-10-15
+257030,Ambae,22240,Confirmed Eruption,,3.0,2017,9,6,Historical Observations,2018.0,10.0,30.0,-15.389,167.835,2017-09-06,2017-09-06,2017-09-04/2017-09-10
+353010,Fernandina,22245,Confirmed Eruption,SSW caldera rim,2.0,2017,9,4,Historical Observations,2017.0,9.0,7.0,-0.37,-91.55,2017-09-04,2017-09-04,2017-09-04/2017-09-10
+344020,San Cristobal,22252,Confirmed Eruption,,3.0,2017,8,18,Historical Observations,2017.0,11.0,11.0,12.702,-87.004,2017-08-18,2017-08-18,2017-08-14/2017-08-20
+261170,Kerinci,22273,Confirmed Eruption,,1.0,2017,8,13,Historical Observations,2017.0,8.0,13.0,-1.697,101.264,2017-08-13,2017-08-13,2017-08-07/2017-08-13
+352090,Sangay,22231,Confirmed Eruption,Summit crater,2.0,2017,7,20,Historical Observations,2017.0,10.0,26.0,-2.005,-78.341,2017-07-20,2017-07-20,2017-07-17/2017-07-23
+264050,Sangeang Api,22228,Confirmed Eruption,Summit crater,2.0,2017,7,15,Historical Observations,2020.0,3.0,30.0,-8.2,119.07,2017-07-15,2017-07-15,2017-07-10/2017-07-16
+233020,"Fournaise, Piton de la",22224,Confirmed Eruption,,0.0,2017,7,14,Historical Observations,2017.0,8.0,28.0,-21.244,55.708,2017-07-14,2017-07-14,2017-07-10/2017-07-16
+252120,Ulawun,22225,Confirmed Eruption,,1.0,2017,6,11,Historical Observations,2017.0,11.0,3.0,-5.05,151.33,2017-06-11,2017-06-11,2017-06-05/2017-06-11
+273010,Bulusan,22229,Confirmed Eruption,,1.0,2017,6,5,Historical Observations,2017.0,6.0,5.0,12.769,124.056,2017-06-05,2017-06-05,2017-06-05/2017-06-11
+261140,Marapi,22226,Confirmed Eruption,Verbeek Crater,1.0,2017,6,4,Historical Observations,2017.0,6.0,4.0,-0.38,100.474,2017-06-04,2017-06-04,2017-05-29/2017-06-04
+300130,Karymsky,22230,Confirmed Eruption,,3.0,2017,6,4,Historical Observations,2018.0,1.0,27.0,54.049,159.443,2017-06-04,2017-06-04,2017-05-29/2017-06-04
+357090,Copahue,22232,Confirmed Eruption,Agrio Crater,1.0,2017,6,4,Historical Observations,2018.0,12.0,7.0,-37.856,-71.183,2017-06-04,2017-06-04,2017-05-29/2017-06-04
+345020,Rincon de la Vieja,22208,Confirmed Eruption,Crater lake,2.0,2017,5,23,Historical Observations,2018.0,3.0,15.0,10.83,-85.324,2017-05-23,2017-05-23,2017-05-22/2017-05-28
+267020,Karangetang,22212,Uncertain Eruption,,0.0,2017,5,10,Historical Observations,2017.0,5.0,10.0,2.781,125.407,2017-05-10,2017-05-10,2017-05-08/2017-05-14
+263200,Dieng Volcanic Complex,22227,Confirmed Eruption,Sileri Crater,1.0,2017,4,30,Historical Observations,2017.0,7.0,2.0,-7.2,109.879,2017-04-30,2017-04-30,2017-04-24/2017-04-30
+284096,Nishinoshima,22207,Confirmed Eruption,,2.0,2017,4,18,Historical Observations,2017.0,8.0,17.0,27.247,140.874,2017-04-18,2017-04-18,2017-04-17/2017-04-23
+345040,Poas,22209,Confirmed Eruption,,1.0,2017,4,12,Historical Observations,2017.0,11.0,6.0,10.2,-84.233,2017-04-12,2017-04-12,2017-04-10/2017-04-16
+222120,"Lengai, Ol Doinyo",22284,Confirmed Eruption,North Crater,0.0,2017,4,9,Historical Observations,2020.0,3.0,24.0,-2.764,35.914,2017-04-09,2017-04-09,2017-04-03/2017-04-09
+360160,Kick 'em Jenny,22260,Confirmed Eruption,,0.0,2017,3,29,Hydrophonic,2017.0,3.0,29.0,12.3,-61.64,2017-03-29,2017-03-29,2017-03-27/2017-04-02
+282080,Aira,22203,Confirmed Eruption,Minamidake summit crater,1.0,2017,3,25,Historical Observations,2020.0,4.0,17.0,31.593,130.657,2017-03-25,2017-03-25,2017-03-20/2017-03-26
+300010,Kambalny,22198,Confirmed Eruption,,3.0,2017,3,24,Historical Observations,2017.0,4.0,10.0,51.306,156.875,2017-03-24,2017-03-24,2017-03-20/2017-03-26
+264100,Ebulobo,22211,Uncertain Eruption,,0.0,2017,3,12,Historical Observations,2017.0,3.0,12.0,-8.817,121.191,2017-03-12,2017-03-12,2017-03-06/2017-03-12
+262000,Krakatau,22188,Confirmed Eruption,Summit crater,1.0,2017,2,19,Historical Observations,2017.0,2.0,19.0,-6.102,105.423,2017-02-19,2017-02-19,2017-02-13/2017-02-19
+344020,San Cristobal,22269,Confirmed Eruption,,1.0,2017,2,18,Historical Observations,2017.0,4.0,19.0,12.702,-87.004,2017-02-18,2017-02-18,2017-02-13/2017-02-19
+233020,"Fournaise, Piton de la",22184,Confirmed Eruption,,0.0,2017,1,31,Historical Observations,2017.0,2.0,27.0,-21.244,55.708,2017-01-31,2017-01-31,2017-01-30/2017-02-05
+243030,Unnamed,22185,Confirmed Eruption,,0.0,2017,1,23,Historical Observations,2017.0,1.0,31.0,-20.852,-175.55,2017-01-23,2017-01-23,2017-01-23/2017-01-29
+260010,Barren Island,22187,Confirmed Eruption,,2.0,2017,1,15,Historical Observations,2017.0,5.0,16.0,12.278,93.858,2017-01-15,2017-01-15,2017-01-09/2017-01-15
+343100,San Miguel,22192,Confirmed Eruption,,1.0,2017,1,7,Historical Observations,2017.0,1.0,7.0,13.434,-88.269,2017-01-07,2017-01-07,2017-01-02/2017-01-08
