@@ -70,15 +70,44 @@ def clean_spotify_data():
     # Create weekly periods to match volcano data
     df['week_period'] = df['week_date'].dt.to_period('W')
     
-    # Clean genre data - extract primary genre
+    # Clean genre data - extract primary genre and handle missing values
+    df['artist_genres'] = df['artist_genres'].fillna('unknown')
     df['primary_genre'] = df['artist_genres'].str.split(',').str[0].str.strip()
+    
+    # Clean up genre names - remove empty strings and normalize
+    df['primary_genre'] = df['primary_genre'].replace('', 'unknown')
     df['primary_genre'] = df['primary_genre'].fillna('unknown')
     
-    # Aggregate by week
+    # Map some common variations to cleaner names
+    genre_mapping = {
+        'dance pop': 'Dance Pop',
+        'pop': 'Pop',
+        'hip hop': 'Hip Hop',
+        'reggaeton': 'Reggaeton',
+        'latin hip hop': 'Latin Hip Hop',
+        'canadian pop': 'Pop',
+        'uk pop': 'Pop',
+        'rap': 'Hip Hop',
+        'electro': 'Electronic',
+        'edm': 'Electronic',
+        'rock': 'Rock',
+        'unknown': 'Unknown'
+    }
+    
+    df['primary_genre'] = df['primary_genre'].str.lower().map(genre_mapping).fillna(df['primary_genre'])
+    
+    # Aggregate by week with improved genre handling
+    def get_top_genre(genres):
+        """Get the most frequent genre, handling edge cases"""
+        genre_counts = genres.value_counts()
+        if len(genre_counts) > 0:
+            return genre_counts.index[0]
+        return 'Unknown'
+    
     weekly_spotify = df.groupby('week_period').agg({
         'streams': 'sum',           # total_streams
         'track_id': 'nunique',      # unique track count
-        'primary_genre': lambda x: x.mode().iloc[0] if len(x.mode()) > 0 else 'unknown'  # most frequent genre
+        'primary_genre': get_top_genre  # most frequent genre
     }).reset_index()
     
     # Rename columns
@@ -107,7 +136,7 @@ def merge_datasets(volcano_df, spotify_df):
     merged_df['max_vei'] = merged_df['max_vei'].fillna(0)
     merged_df['total_streams'] = merged_df['total_streams'].fillna(0)
     merged_df['track_count'] = merged_df['track_count'].fillna(0)
-    merged_df['top_genre'] = merged_df['top_genre'].fillna('unknown')
+    merged_df['top_genre'] = merged_df['top_genre'].fillna('Unknown')
     
     # Sort by period
     merged_df = merged_df.sort_values('period')
@@ -147,5 +176,4 @@ def main():
     print(f"Most common genre: {merged_data['top_genre'].mode().iloc[0] if len(merged_data['top_genre'].mode()) > 0 else 'N/A'}")
 
 if __name__ == "__main__":
-    main()
     main()

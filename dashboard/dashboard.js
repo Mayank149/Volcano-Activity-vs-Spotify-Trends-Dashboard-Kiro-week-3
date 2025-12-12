@@ -6,18 +6,24 @@ let charts = {};
 // Load and process data
 async function loadData() {
     try {
-        const response = await fetch('../merged_dataset.csv');
+        const response = await fetch('./merged_dataset.csv');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const csvText = await response.text();
-        mergedData = parseCSV(csvText);
+        console.log('Raw CSV first 500 chars:', csvText.substring(0, 500));
         
-        console.log('Loaded data:', mergedData.slice(0, 5)); // Debug log
-        console.log('Sample genres:', mergedData.slice(0, 10).map(d => d.top_genre)); // Debug log
+        mergedData = parseCSV(csvText);
+        console.log('Parsed data first 3 records:', mergedData.slice(0, 3));
+        console.log('Sample genre values:', mergedData.slice(0, 10).map(d => d.top_genre));
         
         updateStatistics();
         createCharts();
         generateInsights();
     } catch (error) {
         console.error('Error loading data:', error);
+        console.log('Using sample data instead');
+        
         // Fallback to sample data for demo
         generateSampleData();
         updateStatistics();
@@ -29,19 +35,27 @@ async function loadData() {
 // Parse CSV data
 function parseCSV(csvText) {
     const lines = csvText.trim().split('\n');
-    const headers = lines[0].split(',');
+    const headers = lines[0].split(',').map(h => h.trim());
     
-    return lines.slice(1).map(line => {
-        const values = line.split(',');
+    console.log('Headers found:', headers);
+    
+    return lines.slice(1).map((line, lineIndex) => {
+        const values = line.split(',').map(v => v.trim());
         const obj = {};
+        
         headers.forEach((header, index) => {
-            const value = values[index];
+            const value = values[index] || '';
             if (header === 'period' || header === 'top_genre') {
                 obj[header] = value;
             } else {
                 obj[header] = parseFloat(value) || 0;
             }
         });
+        
+        if (lineIndex < 3) {
+            console.log(`Parsed line ${lineIndex}:`, obj);
+        }
+        
         return obj;
     });
 }
@@ -269,14 +283,19 @@ function createGenreChart() {
     
     // Count genre occurrences
     const genreCounts = {};
-    mergedData.forEach(d => {
-        if (d.top_genre && d.top_genre !== 'unknown' && d.top_genre !== '0' && d.top_genre.trim() !== '') {
-            const genre = d.top_genre.trim();
-            genreCounts[genre] = (genreCounts[genre] || 0) + 1;
+    console.log('Genre chart - total records:', mergedData.length);
+    console.log('First 5 genre values:', mergedData.slice(0, 5).map(d => `"${d.top_genre}" (${typeof d.top_genre})`));
+    
+    mergedData.forEach((d, index) => {
+        if (index < 5) {
+            console.log(`Record ${index}: genre="${d.top_genre}", type=${typeof d.top_genre}, valid=${d.top_genre && d.top_genre !== 'Unknown' && d.top_genre !== 'unknown' && d.top_genre.trim() !== ''}`);
+        }
+        if (d.top_genre && d.top_genre !== 'Unknown' && d.top_genre !== 'unknown' && d.top_genre.trim() !== '') {
+            genreCounts[d.top_genre] = (genreCounts[d.top_genre] || 0) + 1;
         }
     });
     
-    console.log('Genre counts for chart:', genreCounts); // Debug log
+    console.log('Final genre counts:', genreCounts);
     
     // Get top 8 genres
     const sortedGenres = Object.entries(genreCounts)
@@ -403,15 +422,12 @@ function generateInsights() {
     // Most common genre
     const genreCounts = {};
     mergedData.forEach(d => {
-        if (d.top_genre && d.top_genre !== 'unknown' && d.top_genre !== '0') {
+        if (d.top_genre && d.top_genre !== 'Unknown' && d.top_genre !== 'unknown' && d.top_genre.trim() !== '') {
             genreCounts[d.top_genre] = (genreCounts[d.top_genre] || 0) + 1;
         }
     });
-    
-    console.log('Genre counts:', genreCounts); // Debug log
-    
     const sortedGenres = Object.entries(genreCounts).sort(([,a], [,b]) => b - a);
-    const topGenre = sortedGenres.length > 0 ? sortedGenres[0] : ['unknown', 0];
+    const topGenre = sortedGenres.length > 0 ? sortedGenres[0] : ['No genre data', 0];
     
     document.getElementById('volcanoInsight').textContent = 
         `During 2017-2021, there were ${totalEruptions} volcanic eruptions across ${activeWeeks} weeks. ` +
@@ -419,9 +435,12 @@ function generateInsights() {
         `indicating mostly moderate volcanic activity.`;
     
     document.getElementById('musicInsight').textContent = 
+        topGenre[0] !== 'No genre data' ? 
         `"${topGenre[0]}" dominated the charts, appearing in ${topGenre[1]} weeks. ` +
         `Average weekly streams reached ${(avgStreams / 1e9).toFixed(2)} billion, ` +
-        `showing consistent global music consumption patterns.`;
+        `showing consistent global music consumption patterns.` :
+        `Average weekly streams reached ${(avgStreams / 1e9).toFixed(2)} billion, ` +
+        `showing consistent global music consumption patterns across ${mergedData.length} weeks of data.`;
     
     document.getElementById('correlationInsight').textContent = 
         `The correlation coefficient between volcanic activity and streaming is ${correlation.toFixed(3)}. ` +
